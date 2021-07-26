@@ -26,7 +26,7 @@ function emit_results() {
 
 function run() {
   gettool
-  raw_results=$(/tmp/swiftlint/swftlint lint --reporter json)
+  raw_results=$(/tmp/swiftlint lint --reporter json)
   emit_results "$raw_results"
 }
 
