@@ -19,7 +19,6 @@ function gettool() {
 
 function emit_results() { 
   echo "$1" | \
-    jq --slurp | \
         jq '.[] | .file = .file | .line = .line | .type = .rule_id | .message = .reason | del(.severity) | del(.character)' | \
             jq --slurp  
   echo "$1"
