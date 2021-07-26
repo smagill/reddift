@@ -13,7 +13,7 @@ function applicable() {
 function gettool() {
   pushd /tmp >/dev/null
   curl -o swiftlint_linux.zip -LO https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux.zip
-  unzip swiftlint_linux.zip
+  unzip -o -qq swiftlint_linux.zip
   popd >/dev/null
 }
 
