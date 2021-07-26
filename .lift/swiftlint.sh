@@ -20,7 +20,7 @@ function gettool() {
 function emit_results() { 
   echo "$1" | \
         jq '.[] | .file = .file | .line = .line | .type = .rule_id | .message = .reason | del(.severity) | del(.character)' | \
-            jq --slurp  
+            jq --slurp '.[]' 
   echo "$1"
 }
 
