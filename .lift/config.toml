@@ -1,1 +1,1 @@
-customTools = [".lift/SwiftLint"]
+customTools = ["https://raw.githubusercontent.com/smagill/lift-plugins/main/SwiftLint"]
