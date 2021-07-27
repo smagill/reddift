@@ -14,7 +14,7 @@ function gettool() {
   pushd /tmp >/dev/null
   curl -o swift.tar.gz -LO https://swift.org/builds/swift-5.4.2-release/ubuntu2004/swift-5.4.2-RELEASE/swift-5.4.2-RELEASE-ubuntu20.04.tar.gz
   tar xzf swift.tar.gz
-  export PATH=/tmp/swift/usr/bin:$PATH
+  export PATH=/tmp/swift-5.4.2-RELEASE-ubuntu20.04/usr/bin:$PATH
   curl -o swiftlint_linux.zip -LO https://github.com/realm/SwiftLint/releases/download/0.43.1/swiftlint_linux.zip
   unzip -o -qq swiftlint_linux.zip
   popd >/dev/null
