@@ -1,1 +1,1 @@
-customTools = [".lift/swiftlint.sh"]
+customTools = [".lift/SwiftLint"]
