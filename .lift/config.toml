@@ -1,1 +1,2 @@
 customTools = ["https://raw.githubusercontent.com/smagill/lift-plugins/main/SwiftLint"]
+ignore = ["no_space_in_method_call"]
